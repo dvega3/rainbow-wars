@@ -692,6 +692,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0
+  camera: {fileID: 0}
+  cameraPitchMax: 70
 --- !u!1 &2097972404
 GameObject:
   m_ObjectHideFlags: 0
