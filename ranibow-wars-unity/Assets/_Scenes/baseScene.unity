@@ -201,6 +201,7 @@ GameObject:
   - component: {fileID: 140942817}
   - component: {fileID: 140942816}
   - component: {fileID: 140942815}
+  - component: {fileID: 140942819}
   m_Layer: 0
   m_Name: Plane
   m_TagString: Untagged
@@ -221,7 +222,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: e1417097f78b84f91a5da130f569745f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -274,6 +275,16 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!154 &140942819
+TerrainCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 140942814}
+  m_Material: {fileID: 0}
+  m_Enabled: 1
+  m_TerrainData: {fileID: 0}
+  m_EnableTreeColliders: 1
 --- !u!1 &548773969
 GameObject:
   m_ObjectHideFlags: 0
@@ -596,6 +607,7 @@ GameObject:
   - component: {fileID: 1463426936}
   - component: {fileID: 1463426935}
   - component: {fileID: 1463426934}
+  - component: {fileID: 1463426938}
   m_Layer: 0
   m_Name: colorHero
   m_TagString: Untagged
@@ -661,13 +673,25 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1463426933}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10, y: 0.5, z: 10}
+  m_LocalPosition: {x: 0, y: 0.5, z: 10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2097972409}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1463426938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1463426933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73e57bc714cce49f7a841841f9355ace, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 0
 --- !u!1 &2097972404
 GameObject:
   m_ObjectHideFlags: 0
@@ -750,10 +774,10 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2097972404}
-  m_LocalRotation: {x: -0.06092172, y: 0.97013235, z: -0.12156855, w: -0.20088014}
-  m_LocalPosition: {x: 33.1, y: -19.9, z: -29.4}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0.0012313395, y: 0.923234, z: -0.3836766, w: -0.020732597}
+  m_LocalPosition: {x: 0, y: 8.36, z: 3.11}
+  m_LocalScale: {x: 1, y: 0.4755883, z: 1}
   m_Children: []
   m_Father: {fileID: 1463426937}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 15.091001, y: 202.851, z: -4.1200004}
+  m_LocalEulerAnglesHint: {x: 45.113003, y: 183.03299, z: 1.107}
